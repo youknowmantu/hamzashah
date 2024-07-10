@@ -40,3 +40,11 @@ var tablinks = document.getElementsByClassName("tab-links");
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+  // Preloader
+
+  var loading = document.getElementById('preloader');
+  
+  function loadFunction(){
+    loading.style.display = "none";
+  }
