@@ -44,7 +44,9 @@ var tablinks = document.getElementsByClassName("tab-links");
   // Preloader
 
   var loading = document.getElementById('preloader');
-  
-  function loadFunction(){
-    loading.style.display = "none";
+
+  function loadFunction() {
+    if (document.getElementById('header') !== null) {
+     loading.style.display = "none";
+    }
   }
